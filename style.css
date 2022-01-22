@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* ### Primary */
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    /* (paragraphs) */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    /* (background, headings, buttons) */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+
+body{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.main-section{
+    margin: 6rem auto 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.main-section #div1, #div2, #div3{
+    display: inline-block;
+    width: 300px;
+}
+
+.main-section .content-div{
+    margin: 50px 50px 80px;
+}
+
+.main-section #div1{
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.main-section #div2{
+    background-color: var(--dark-cyan);
+}
+
+.main-section #div3{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.main-section h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    color: hsla(100, 100%, 100%, 90%);
+    font-size: 40px;
+    margin: 30px 0 0;
+}
+
+.main-section p{
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--transparent-white);
+}
+
+.main-section .p-div{
+    margin: 30px 0;
+}
+
+.main-section div .button-div{
+    margin: 0 0 50px 50px;
+}
+
+.main-section div button{
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.main-section #div1 button{
+    color: var(--bright-orange);
+}
+
+.main-section #div2 button{
+    color: var(--dark-cyan);
+}
+
+.main-section #div3 button{
+    color: var(--very-dark-cyan);
+}
+
+.main-section #div1 button:hover{
+    color: white;
+    background-color: var(--bright-orange);
+    cursor: pointer;
+}
+
+.main-section #div2 button:hover{
+    color: white;
+    background-color: var(--dark-cyan);
+    cursor: pointer;
+}
+
+.main-section #div3 button:hover{
+    color: white;
+    background-color: var(--very-dark-cyan);
+    cursor: pointer;
+}
+
+footer{
+    font-family: "Lexend Deca", sans-serif;
+}
