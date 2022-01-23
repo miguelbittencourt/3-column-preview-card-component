@@ -30,7 +30,6 @@ body{
     margin: 6rem auto 0;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
 }
 
 .main-section #div1, #div2, #div3{
@@ -63,9 +62,10 @@ body{
     margin: 30px 0 0;
 }
 
-.main-section p{
+.main-section .p-div p{
     font-family: "Lexend Deca", sans-serif;
     color: var(--transparent-white);
+    line-height: 25px;
 }
 
 .main-section .p-div{
@@ -115,4 +115,48 @@ body{
 
 footer{
     font-family: "Lexend Deca", sans-serif;
+}
+
+@media(max-width: 840px)
+{
+    .main-section{
+        width: 95%;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .main-section{
+        display: block;
+        margin: 6rem auto 0;
+        width: 90%;
+    }
+
+    .main-section #div1, #div2,#div3{
+        display: block;
+        width: 100%;
+        /* margin: auto; */
+    }
+
+    .main-section #div1{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .main-section #div3{
+        border-radius: 0 0 10px 10px;
+    }
+
+    .main-section .content-div{
+        margin: 50px 50px 25px;
+        display: inline-block;
+    }
+
+    .main-section div .button-div{
+        margin: 0 0 50px 50px;
+        display: inline-block;
+    }
+
+    .main-section .p-div{
+        margin: 30px 0 0;
+    }
 }
